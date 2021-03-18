@@ -308,7 +308,7 @@
 
       <div id="menu_logout">
         <div id="menu_header22" class="khung p-3"
-          style="margin: 0 auto;width: 200px; background: orange; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;padding: 0.5rem;position: absolute;z-index: 999;margin-left: calc(100vw - 250px);margin-top: -25px;display: none;">
+          style="margin: 0 auto;width: 200px; background: gray; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;padding: 0.5rem;position: absolute;z-index: 999;margin-left: calc(100vw - 250px);margin-top: -25px;display: none;">
           <p id="hello_user" class="text-white" style="opacity: 0.9"></p>
           <div id="quanlydon" class="box p-1" style="height: 35px;display: none;">
             <a href="dashboard.html">
@@ -1237,7 +1237,7 @@
       </div> </td>
       <td class="text-center"><input id="quality_input_change`+ i + `" onchange ="upQuality(` + orderFood[i].id_order + `)" class="cart_input_quanlity mt-2" type="number" value="` + orderFood[i].quanlity_order + `" name="" min="1" max="20" style=""> </td>
       <td class="text-center"><p class="mt-2" style="padding:5px;">$`+ orderFood[i].price_order * orderFood[i].quanlity_order + `</p></td>
-      <td class="text-center"><div onclick="delete_order(`+ orderFood[i].id_order + `)" class="cart_button_delete"><i class="fa fa-trash" aria-hidden="true" style="color: #fb9200;font-size: 180%"></i></div> </td>
+      <td class="text-center"><div onclick="delete_order(`+ orderFood[i].id_order + `)" class="cart_button_delete"><i class="fa fa-trash" aria-hidden="true" style="color: red;font-size: 180%"></i></div> </td>
     </tr>`
           document.getElementById("prinf_order_cart").innerHTML += prinf_order_cart;
 
